@@ -4,7 +4,7 @@ A react native app that searches job sites for latest jobs. Makes Job applicatio
 
 One place job updates!
 
-![Home Screen](/assets/job_app_home.PNG)
+[job_app_demo.webm](https://user-images.githubusercontent.com/64949174/235491573-d1e19a7a-aa78-4250-9373-20f312538dbe.webm)
 
 
 ## 🚀 How to use
