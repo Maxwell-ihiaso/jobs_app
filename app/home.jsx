@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { SafeAreaView, ScrollView, View } from "react-native";
 import { Stack, useRouter } from "expo-router";
 
@@ -18,7 +17,7 @@ const Home = () => {
       <Stack.Screen
         options={{
           headerStyle: { backgroundColor: COLORS.lightWhite },
-          headerShadowVisible: false,
+          headerShadowVisible: true,
           headerLeft: () => (
             <ScreenHeaderBtn iconUrl={icons.menu} dimension='60%' />
           ),
