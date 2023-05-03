@@ -26,6 +26,24 @@ const styles = StyleSheet.create({
     marginTop: SIZES.medium,
     gap: SIZES.small,
   },
+  errorContainer: {
+    flexDirection: "row",
+    paddingVertical: 5,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: 20,
+  },
+  reloadBtnContainer: {
+    width: 40,
+    height: 40,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  reloadBtnImage: {
+    width: "80%",
+    height: "80%",
+    tintColor: COLORS.gray,
+  },
 });
 
 export default styles;

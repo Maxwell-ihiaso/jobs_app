@@ -1,16 +1,16 @@
 import React from "react";
 import { useRouter } from "expo-router";
-import { View, Text, TouchableOpacity, ActivityIndicator } from "react-native";
+import { View, Text, TouchableOpacity, ActivityIndicator, Image } from "react-native";
 
 import styles from "./nearbyjobs.style";
-import { COLORS } from "../../../constants";
+import { COLORS, icons } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import useFetch from "../../../hook/useFetch";
 
 const Nearbyjobs = () => {
   const router = useRouter();
-  const { data, isLoading, error } = useFetch("search", {
-    query: "React Native developer",
+  const { data, isLoading, error, refetch } = useFetch("search", {
+    query: "developer",
     num_pages: "1",
   });
 
@@ -27,8 +27,21 @@ const Nearbyjobs = () => {
         {isLoading ? (
           <ActivityIndicator size='large' color={COLORS.primary} />
         ) : error ? (
-          <Text>Something went wrong</Text>
-        ) : (
+        
+        <View style={styles.errorContainer}>
+            <Text>Something went wrong</Text>
+            <TouchableOpacity
+            style={styles.reloadBtnContainer}
+            onPress={() => refetch()}
+            >
+             <Image
+             source={icons.reload}
+             resizeMode="contain"
+             style={styles.reloadBtnImage}
+             />
+            </TouchableOpacity>
+          </View>
+          ) : (
           data?.map((job) => (
             <NearbyJobCard
               job={job}
