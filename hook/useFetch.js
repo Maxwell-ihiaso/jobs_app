@@ -5,7 +5,7 @@ import { RapidAPI_Key, RapidAPI_Host } from "@env";
 const RAPID_API_KEY = RapidAPI_Key;
 const RAPID_API_HOST = RapidAPI_Host;
 
-const useFetch = (endpoint, query) => {
+const useFetch = (endpoint, query, delay = 0) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -40,7 +40,11 @@ const useFetch = (endpoint, query) => {
   };
 
   useEffect(() => {
-    fetchData();
+    const timer = setTimeout(() => fetchData(), delay);
+    
+    return () => {
+      clearTimeout(timer)
+    }
   }, []);
 
   const refetch = () => {

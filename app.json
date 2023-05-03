@@ -5,6 +5,24 @@
       "bundler": "metro"
     },
     "name": "jobs_app",
-    "slug": "jobs_app"
+    "slug": "stay-hired",
+    "extra": {
+      "eas": {
+        "projectId": "d61e2764-78ab-4258-a29e-4c5a869e4fd8"
+      }
+    },
+    "owner": "maxic_gray",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d61e2764-78ab-4258-a29e-4c5a869e4fd8"
+    },
+    "android": {
+      "package": "com.maxic_gray.stayhired"
+    },
+    "ios": {
+      "bundleIdentifier": "-stayHired"
+    }
   }
 }

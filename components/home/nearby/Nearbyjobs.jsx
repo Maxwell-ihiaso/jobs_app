@@ -12,7 +12,7 @@ const Nearbyjobs = () => {
   const { data, isLoading, error, refetch } = useFetch("search", {
     query: "developer",
     num_pages: "1",
-  });
+  }, 1500);
 
   return (
     <View style={styles.container}>
