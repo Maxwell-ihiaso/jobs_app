@@ -1,4 +1,4 @@
-import profile from "../assets/images/maxwell.jpg";
+import profile from "../assets/images/avatar.png";
 
 export default {
   profile,

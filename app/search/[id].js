@@ -88,6 +88,7 @@ const JobSearch = () => {
                           source={icons.reload}
                           resizeMode="contain"
                           style={styles.reloadBtnImage}
+                          accessibilityLabel='reload'
                         />
                       </TouchableOpacity>
                     </View>
@@ -106,6 +107,7 @@ const JobSearch = () => {
                   source={icons.chevronLeft}
                   style={styles.paginationImage}
                   resizeMode="contain"
+                  accessibilityLabel='go left'
                 />
               </TouchableOpacity>
               <View style={styles.paginationTextBox}>
@@ -119,6 +121,7 @@ const JobSearch = () => {
                   source={icons.chevronRight}
                   style={styles.paginationImage}
                   resizeMode="contain"
+                  accessibilityLabel='go right'
                 />
               </TouchableOpacity>
             </View>
