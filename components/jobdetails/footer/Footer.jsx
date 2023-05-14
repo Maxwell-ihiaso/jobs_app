@@ -11,6 +11,7 @@ const Footer = ({ url }) => {
           source={icons.heartOutline}
           resizeMode='contain'
           style={styles.likeBtnImage}
+          accessibilityLabel="mark as favorite"
         />
       </TouchableOpacity>
 

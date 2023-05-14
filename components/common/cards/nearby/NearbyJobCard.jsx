@@ -15,6 +15,7 @@ const NearbyJobCard = ({ job, handleNavigate }) => {
           }}
           resizeMode='contain'
           style={styles.logImage}
+          accessibilityLabel="employer logo"
         />
       </TouchableOpacity>
 

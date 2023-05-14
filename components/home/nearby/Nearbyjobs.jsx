@@ -38,6 +38,7 @@ const Nearbyjobs = () => {
              source={icons.reload}
              resizeMode="contain"
              style={styles.reloadBtnImage}
+             accessibilityLabel="reload"
              />
             </TouchableOpacity>
           </View>
