@@ -41,7 +41,7 @@
     "metro-resolver": "^0.73.7"
   },
   "name": "jobs_app",
-  "version": "2.0.2",
+  "version": "1.0.3",
   "author": "Maxwell Ihiaso",
   "keywords": [
     "react",
