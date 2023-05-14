@@ -23,6 +23,16 @@
     },
     "ios": {
       "bundleIdentifier": "-stayHired"
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true
+          }
+        }
+      ]
+    ]
   }
 }
