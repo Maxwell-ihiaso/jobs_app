@@ -8,8 +8,7 @@
     "slug": "stay-hired",
     "extra": {
       "eas": {
-        "projectId": "d61e2764-78ab-4258-a29e-4c5a869e4fd8",
-        "versionCode": 2
+        "projectId": "d61e2764-78ab-4258-a29e-4c5a869e4fd8"
       }
     },
     "owner": "maxic_gray",
@@ -20,7 +19,8 @@
       "url": "https://u.expo.dev/d61e2764-78ab-4258-a29e-4c5a869e4fd8"
     },
     "android": {
-      "package": "com.maxic_gray.stayhired"
+      "package": "com.maxic_gray.stayhired",
+      "versionCode": 2
     },
     "ios": {
       "bundleIdentifier": "-stayHired"
