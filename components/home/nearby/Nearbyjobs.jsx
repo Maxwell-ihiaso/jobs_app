@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "expo-router";
 import { View, Text, TouchableOpacity, ActivityIndicator, Image } from "react-native";
 
+
 import styles from "./nearbyjobs.style";
 import { COLORS, icons } from "../../../constants";
 import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
@@ -10,9 +11,11 @@ import useFetch from "../../../hook/useFetch";
 const Nearbyjobs = () => {
   const router = useRouter();
   const { data, isLoading, error, refetch } = useFetch("search", {
-    query: "developer",
+    query: "popular",
     num_pages: "1",
   }, 1500);
+
+
 
   return (
     <View style={styles.container}>

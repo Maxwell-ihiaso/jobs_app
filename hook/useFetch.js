@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { RapidAPI_Key, RapidAPI_Host } from "@env";
 
-const RAPID_API_KEY = RapidAPI_Key;
-const RAPID_API_HOST = RapidAPI_Host;
+// env import has been relaced by dotenv and set in 
+// app.config.js
+
+// import { RapidAPI_Key, RapidAPI_Host } from "@env";
+
+// const RAPID_API_KEY = RapidAPI_Key;
+// const RAPID_API_HOST = RapidAPI_Host;
 
 const useFetch = (endpoint, query, delay = 0) => {
   const [data, setData] = useState([]);
@@ -12,10 +16,10 @@ const useFetch = (endpoint, query, delay = 0) => {
 
   const options = {
     method: "GET",
-    url: `https://${RAPID_API_HOST}/${endpoint}`,
+    url: `https://${process.env.RapidAPI_Host}/${endpoint}`,
     headers: {
-      "X-RapidAPI-Key": RAPID_API_KEY,
-      "X-RapidAPI-Host": RAPID_API_HOST,
+      "X-RapidAPI-Key": process.env.RapidAPI_Key,
+      "X-RapidAPI-Host": process.env.RapidAPI_Host,
     },
     params: { ...query },
   };
