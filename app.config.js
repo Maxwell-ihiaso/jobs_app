@@ -8,7 +8,7 @@ export default {
     },
     name: "jobs_app",
     slug: "stay-hired",
-    version: "1.0.3",
+    version: "1.0.4",
     orientation: "portrait",
     userInterfaceStyle: "automatic",
     assestBundlePatterns: ["**/*"],
@@ -29,7 +29,7 @@ export default {
     },
     android: {
       package: "com.maxic_gray.stayhired",
-      versionCode: 3,
+      versionCode: 4,
       adaptiveIcon: {
         foregroundImage:
           "https://t4.ftcdn.net/jpg/05/05/61/73/360_F_505617309_NN1CW7diNmGXJfMicpY9eXHKV4sqzO5H.jpg",
@@ -39,7 +39,7 @@ export default {
     ios: {
       bundleIdentifier: "-stayHired",
       supportsTablet: true,
-      buildNumber: "1.0.3",
+      buildNumber: "1.0.4",
     },
     plugins: [
       [
