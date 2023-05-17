@@ -20,7 +20,7 @@
     },
     "android": {
       "package": "com.maxic_gray.stayhired",
-      "versionCode": 2
+      "versionCode": 3
     },
     "ios": {
       "bundleIdentifier": "-stayHired"
