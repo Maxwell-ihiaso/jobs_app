@@ -8,7 +8,7 @@ export default {
     },
     name: "jobs_app",
     slug: "stay-hired",
-    version: "1.0.4",
+    version: "1.0.5",
     extra: {
       eas: {
         projectId: "d61e2764-78ab-4258-a29e-4c5a869e4fd8",
@@ -25,12 +25,12 @@ export default {
     },
     android: {
       package: "com.maxic_gray.stayhired",
-      versionCode: 4
+      versionCode: 5
     },
     ios: {
       bundleIdentifier: "-stayHired",
       supportsTablet: true,
-      buildNumber: "1.0.4",
+      buildNumber: "1.0.5",
     },
     plugins: [
       [
