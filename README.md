@@ -22,6 +22,8 @@ touch .env
 // check the JSearch API on Rapid API - https://rapidapi.com/letscrape-6bRBa3QguO5/api/jsearch
 // provide RapidAPI_Key and RapidAPI_Host in your .env file
 
+npx install-expo-modules@latest //if this does not work then use npm install
+npm install // use this if npx install-expo-modules does not work
 npm start
 ```
 
