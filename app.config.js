@@ -6,9 +6,15 @@ export default {
     web: {
       bundler: "metro",
     },
-    name: "jobs_app",
+    name: "Career Hunter",
     slug: "stay-hired",
-    version: "1.0.5",
+    version: "1.0.7",
+    icon: "./assets/images/career_hunter.png",
+    splash: {
+      image: "./assets/images/career_hunter_2.png",
+      resizeMode: "contain",
+      backgroundColor: "#ffffff",
+    },
     extra: {
       eas: {
         projectId: "d61e2764-78ab-4258-a29e-4c5a869e4fd8",
@@ -25,12 +31,12 @@ export default {
     },
     android: {
       package: "com.maxic_gray.stayhired",
-      versionCode: 5
+      versionCode: 7,
     },
     ios: {
       bundleIdentifier: "-stayHired",
       supportsTablet: true,
-      buildNumber: "1.0.5",
+      buildNumber: "1.0.7",
     },
     plugins: [
       [
